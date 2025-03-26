@@ -32,6 +32,12 @@ const projects = [
     description: "Self-built and designed Custom Amp & Cabinet",
     category: "design",
     image: "../images/project_amp/stack_04.jpg", // Placeholder path, update with your images
+    viewProjectInfo: `
+            <h2>Amp & Cabinet Details</h2>
+            <p>This is a custom-built amplifier and cabinet designed for optimal sound quality.</p>
+            <img src="../images/project_amp/stack_04.jpg" alt="Amp & Cabinet" style="max-width: 100%;">
+            <p>More details about the build process...</p>
+        `,
   },
   // Add more projects as needed
 ];

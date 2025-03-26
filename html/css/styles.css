@@ -1,9 +1,15 @@
 /* Reset and Base Styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --navbar-height: 60px;
+  --footer-height: 50px;
 }
 
 body {
@@ -24,6 +30,7 @@ h1 {
   position: fixed;
   top: 0;
   width: 100%;
+  height: var(--navbar-height);
   color: #c8c3bc;
   /* background: white; */
   background-color: rgb(27, 30, 31);
@@ -273,7 +280,8 @@ h1 {
 }
 
 /* Button Styling */
-.project-card button {
+.project-card button,
+.view-project-btn {
   padding: 0.5rem 1rem;
   background: #790a00;
   color: #fff;
@@ -281,21 +289,17 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
-  width: 100%; /* Full width of card */
-  text-align: center; /* Center text */
-  height: 40px; /* Fixed height */
+  width: 100%;
+  text-align: center;
+  height: 40px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Vertically and horizontally center text */
+  justify-content: center;
 }
 
-.project-card button:hover {
+.project-card button:hover,
+.view-project-btn:hover {
   background: #e65b50;
-}
-
-.project-link {
-  text-decoration: none; /* Remove underline */
-  display: block; /* Match button behavior */
 }
 
 /* Filter Buttons (Projects Page) */
@@ -384,6 +388,7 @@ h1 {
   color: #c8c3bc;
   background-color: rgb(27, 30, 31);
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .social-links a {
@@ -433,6 +438,57 @@ h1 {
   width: 100%;
   max-width: 900px; /* Balance layout */
 }
+
+.content {
+  padding-top: var(--navbar-height);
+  padding-bottom: var(--footer-height);
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: left 20px center;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 3000; /* Above all other elements */
+  overflow: auto; /* Scroll if content overflows */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 5% auto; /* Centered with margin */
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px; /* Max width for larger screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #ff0000;
+}
+
+.modal-body {
+  margin-top: 20px;
+}
+
 /* responsive design */
 @media (max-width: 768px) {
   .navbar {
@@ -462,5 +518,18 @@ h1 {
   }
   .about {
     padding: 2rem 1rem;
+  }
+
+  :root {
+    --navbar-height: 50px;
+    --footer-height: 40px;
+  }
+  .content {
+    background-position: left 10px center;
+  }
+
+  .modal-content {
+    width: 90%; /* Wider on mobile */
+    margin: 10% auto; /* More top margin on mobile */
   }
 }
