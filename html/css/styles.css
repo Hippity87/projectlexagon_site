@@ -1,0 +1,466 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #ffffff;
+  /* background: white; */
+  background-color: rgb(58, 58, 58);
+  /* color: #333; */
+  line-height: 1.6;
+}
+
+h1 {
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  font-size: 4vh;
+}
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #c8c3bc;
+  /* background: white; */
+  background-color: rgb(27, 30, 31);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer; /* Optional: Makes logo clickable for toggle */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+
+  color: #c8c3bc;
+  /* background: white; */
+  background-color: rgb(27, 30, 31);
+  font-weight: 400;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: rgb(172, 0, 0);
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none; /* Hidden by default on desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 100%;
+  height: 3px;
+  background: #333;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Show hamburger on mobile */
+  }
+
+  .nav-links {
+    display: none; /* Hide links by default on mobile */
+    position: absolute;
+    top: 60px; /* Below navbar */
+    left: 0;
+    width: 100%;
+    background: #222; /* Dark background for contrast */
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    transform: translateY(-100%); /* Start off-screen */
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show when active */
+    transform: translateY(0); /* Slide down */
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .nav-links a {
+    color: #fff; /* White text on dark background */
+  }
+
+  .nav-links a::after {
+    background: #ff6f61; /* Keep hover effect */
+  }
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-content {
+  /* color: #fff; */
+  color: #ffffff;
+  /* background: white; */
+  background-color: rgb(27, 30, 31);
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black "platform" */
+  padding: 1.5rem 3rem; /* Adds space around text */
+  border-radius: 10px; /* Softens edges */
+  backdrop-filter: blur(5px); /* Optional: Adds a frosted glass effect */
+}
+
+.hero-content h1 {
+  margin-top: 0;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for extra pop */
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Shadow for tagline */
+}
+
+.hero-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff6f61, #6b48ff),
+    url("../images/octa_2.webp");
+
+  background-size: cover, cover;
+  background-position: left 4vh, center;
+  background-blend-mode: overlay; /* Blends gradient with image */
+  animation: gradientShift 8s ease infinite;
+  z-index: -1;
+}
+
+/* Intro Section */
+.intro {
+  padding: 4rem 2rem;
+  text-align: center;
+  font-size: large;
+  /* color: #fff; */
+  color: #ffffff;
+  /* background: white; */
+  /* background-color: rgb(27, 30, 31); */
+  z-index: 1;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Projects Grid */
+.projects-grid,
+.projects-page {
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 10vh;
+  z-index: 1;
+}
+
+.projects-grid h2,
+.projects-page h1 {
+  margin-bottom: 1rem;
+  /* color: #fff; */
+  color: #ffffff;
+  /* background: white; */
+  /* background-color: rgb(27, 30, 31); */
+  z-index: 1;
+  /* background: rgba(0, 0, 0, 0.5); Semi-transparent black "platform" */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Project Card */
+.project-card {
+  color: #ffffff;
+  /* background: white; */
+  background-color: rgb(27, 30, 31);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between; /* Pushes button to bottom */
+  height: 100%; /* Ensures consistent height */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  flex-grow: 1; /* Allows description to take available space */
+  margin-bottom: 1rem;
+}
+
+/* Button Styling */
+.project-card button {
+  padding: 0.5rem 1rem;
+  background: #790a00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%; /* Full width of card */
+  text-align: center; /* Center text */
+  height: 40px; /* Fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Vertically and horizontally center text */
+}
+
+.project-card button:hover {
+  background: #e65b50;
+}
+
+.project-link {
+  text-decoration: none; /* Remove underline */
+  display: block; /* Match button behavior */
+}
+
+/* Filter Buttons (Projects Page) */
+.filter {
+  margin-bottom: 2rem;
+}
+
+.filter button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  color: #ffffff;
+  /* background: white; */
+  background-color: rgb(27, 30, 31);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter button.active {
+  background: #ff6f61;
+  color: #fff;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 700px; /* Match your video size preference */
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio ul {
+  list-style: none;
+  text-align: left;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.submit-btn {
+  padding: 0.8rem;
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  color: #c8c3bc;
+  background-color: rgb(27, 30, 31);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-links a {
+  margin: 0 1rem;
+  color: #c8c3bc;
+  background-color: rgb(27, 30, 31);
+  text-decoration: none;
+}
+
+/* Video Container for About Page */
+.video-container {
+  max-width: 100%; /* Large but not full-width */
+  width: 100%; /* Responsive */
+  margin: 2rem auto; /* Center it with spacing */
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (315 / 560 * 100) */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px; /* Matches other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* Stretch to fill height */
+  width: 100%;
+  max-width: 900px; /* Balance layout */
+}
+/* responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  .hero-content {
+    padding: 1rem 2rem;
+  }
+  .video-container {
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about {
+    padding: 2rem 1rem;
+  }
+}
