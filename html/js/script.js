@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to load and inject the modal
   function loadModal(callback) {
     console.log("Attempting to fetch modal.html...");
-    fetch("/html/modal.html") // Changed from "../html/modal.html"
+    fetch("../html/modal.html")
       .then((response) => {
         console.log("Fetch response status:", response.status);
         if (!response.ok) {
