@@ -31,13 +31,20 @@ const projects = [
     title: "Amp & Cabinet",
     description: "Self-built and designed Custom Amp & Cabinet",
     category: "design",
-    image: "../html/images/project_amp/stack_04.jpg", // Placeholder path, update with your images
+    image: "../html/images/project_amp/amp_project04.jpg", // Placeholder path, update with your images
     viewProjectInfo: `
             <h2>Amp & Cabinet Details</h2>
-            <p>This is a custom-built amplifier and cabinet designed for optimal sound quality.</p>
-            <img src="../images/project_amp/stack_04.jpg" alt="Amp & Cabinet" style="max-width: 100%;">
-            <p>More details about the build process...</p>
-        `,
+            <p>This is a custom-built amplifier and cabinet that I designed and built with my dad. The actual amp is from an 80s Fender "The Twin", but the cabinet elements were swapped with vintage Celestion G10S-50's.
+            </p>
+            <img src="../html/images/project_amp/amp_project01.jpg" alt="Amp & Cabinet" style="max-width: 100%;">
+            <img src="../html/images/project_amp/amp_project02.jpg" alt="Amp & Cabinet" style="max-width: 100%;">
+            <p>The build process included CAD-plans(thanks dad), choosing of materials, 3D-printing the amplifier and cabinet feet, and the obvious craftmanship by us that included some carpentry and tailoring.</p>
+            <img src="../html/images/project_amp/amp_project03.jpg" alt="Amp & Cabinet" style="max-width: 100%;">
+            <p>Also some electrical wiring and soldering was done to make amplifier connectivity possible, both parallel and series.</p>
+            <img src="../html/images/project_amp/amp_project05.jpg" alt="Amp & Cabinet" style="max-width: 100%;">  
+            <img src="../html/images/project_amp/amp_project06.jpg" alt="Amp & Cabinet" style="max-width: 100%;">
+            <img src="../html/images/project_amp/amp_project04.jpg" alt="Amp & Cabinet" style="max-width: 100%;">
+            `,
   },
   // Add more projects as needed
 ];

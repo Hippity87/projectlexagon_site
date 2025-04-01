@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
         projectCards.forEach((card) => {
           const category = card.getAttribute("data-category");
           card.style.display =
-            filter === "all" || category === filter ? "block" : "none";
+            filter === "all" || category === filter ? "flex" : "none";
         });
       });
     });
