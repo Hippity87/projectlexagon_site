@@ -2,7 +2,7 @@
 function loadNavbar() {
   const navbarPlaceholder = document.getElementById("navbar-placeholder");
   if (navbarPlaceholder) {
-    fetch("../html/navbar.html")
+    fetch("/navbar.html")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -30,7 +30,7 @@ function loadNavbar() {
 function loadFooter() {
   const footerPlaceholder = document.getElementById("footer-placeholder");
   if (footerPlaceholder) {
-    fetch("../html/footer.html")
+    fetch("/footer.html")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to load and inject the modal
   function loadModal(callback) {
     console.log("Attempting to fetch modal.html...");
-    fetch("../html/modal.html")
+    fetch("/modal.html")
       .then((response) => {
         console.log("Fetch response status:", response.status);
         if (!response.ok) {
