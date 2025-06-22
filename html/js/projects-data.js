@@ -2,6 +2,20 @@
 const projects = [
   {
     id: "project1",
+    title: "QuantumConnect",
+    description: "My rendition of the CERN QuantumConnect game + my own bot",
+    category: "tech",
+    image: "/images/qc_rework_project_card.png",
+    githubLink: "https://quantum.projectlexagon.fi",
+    // viewProjectInfo: `
+    //         <h2>QuantumConnect Details</h2>
+    //         <p>I participated in a competition this spring called CERN Spring Campus 2025. The idea was to provide a bot-algorithm and make the bots play against each other on a live server. I came in third in the competition, with no prior experience with Java or such algorithmic bots that use heuristics like MCTS. I will not lie-- I used all the AI tools I could to my advantage and the results were great. I learned a lot and the experience of developing and competing on the leaderboards was addictive to say the least.
+    //         </p>
+    //         <img src="/images/qc_rework_project_card.png" alt="QuantumConnect Rework" style="max-width: 100%;">
+    //         `,
+  },
+  {
+    id: "project2",
     title: "Fighterboi",
     description: "Game development with Unity, C# and Asesprite",
     category: "tech",
@@ -9,7 +23,7 @@ const projects = [
     githubLink: "https://github.com/Hippity87/fighterboi",
   },
   {
-    id: "project2",
+    id: "project3",
     title: "IoT-project",
     description:
       "Arduino Nano 33 IoT with Backend(Node.js+Express), Dashboard and Docker Infrastructure",
@@ -18,7 +32,7 @@ const projects = [
     githubLink: "https://github.com/Hippity87/iot-docker-project",
   },
   {
-    id: "project3",
+    id: "project4",
     title: "Valheim-server",
     description:
       "A live server configured for the game Valheim with linuxgsm and VirtualBox",
@@ -27,7 +41,7 @@ const projects = [
     githubLink: "https://youtu.be/UzIZxuJHfeE?si=-to8OL-Q1msWB70a",
   },
   {
-    id: "project4",
+    id: "project5",
     title: "Amp & Cabinet",
     description: "Self-built and designed Custom Amp & Cabinet",
     category: "design",
