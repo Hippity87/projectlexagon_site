@@ -17,7 +17,8 @@ const projects = [
   {
     id: "project2",
     title: "React App",
-    description: "Frontend app: vite+react+zustand+tailwind+reactrouter",
+    description:
+      "Frontend app: vite + react + zustand + tailwind + reactrouter",
     category: "tech",
     image: "/images/react_project_card.png",
     githubLink: "https://react.projectlexagon.fi",
