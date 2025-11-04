@@ -1,7 +1,16 @@
 // js/projects-data.js
 const projects = [
-  {
+    {
     id: "project1",
+    title: "Minni-luokittelija",
+    description:
+      "Azure Service: Blazor WASM app that classifies images of dogs using Custom Vision AI model",
+    category: "tech",
+    image: "/images/minni-luokittelija_project_card.png",
+    githubLink: "https://minni.projectlexagon.fi",
+  },
+  {
+    id: "project2",
     title: "QuantumConnect",
     description: "My rendition of the CERN QuantumConnect game + my own bot",
     category: "tech",
@@ -15,7 +24,7 @@ const projects = [
     //         `,
   },
   {
-    id: "project2",
+    id: "project3",
     title: "React App",
     description:
       "Frontend app: vite + react + zustand + tailwind + reactrouter",
@@ -24,7 +33,7 @@ const projects = [
     githubLink: "https://react.projectlexagon.fi",
   },
   {
-    id: "project3",
+    id: "project4",
     title: "Fighterboi",
     description: "Game development with Unity, C# and Asesprite",
     category: "tech",
@@ -32,7 +41,7 @@ const projects = [
     githubLink: "https://github.com/Hippity87/fighterboi",
   },
   {
-    id: "project4",
+    id: "project5",
     title: "IoT-project",
     description:
       "Arduino Nano 33 IoT with Backend(Node.js+Express), Dashboard and Docker Infrastructure",
@@ -41,7 +50,7 @@ const projects = [
     githubLink: "https://github.com/Hippity87/iot-docker-project",
   },
   {
-    id: "project5",
+    id: "project6",
     title: "Valheim-server",
     description:
       "A live server configured for the game Valheim with linuxgsm and VirtualBox",
@@ -50,7 +59,7 @@ const projects = [
     githubLink: "https://youtu.be/UzIZxuJHfeE?si=-to8OL-Q1msWB70a",
   },
   {
-    id: "project6",
+    id: "project7",
     title: "Amp & Cabinet",
     description: "Self-built and designed Custom Amp & Cabinet",
     category: "design",
