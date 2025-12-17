@@ -1,7 +1,16 @@
 // js/projects-data.js
 const projects = [
-    {
+       {
     id: "project1",
+    title: "WoW Classic RAG",
+    description:
+      "Azure OpenAI & Azure AI Search RAG for Classic WoW",
+    category: "tech",
+    image: "/images/wow-rag-01.png",
+    githubLink: "https://github.com/Hippity87/wow-rag-app",
+  }, 
+  {
+    id: "project2",
     title: "Minni-luokittelija",
     description:
       "Azure Service: Blazor WASM app that classifies images of dogs using Custom Vision AI model",
