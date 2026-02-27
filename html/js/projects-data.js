@@ -1,14 +1,14 @@
 // js/projects-data.js
 const projects = [
-       {
+  {
     id: "project1",
-    title: "WoW Classic RAG",
+    title: "IIOT-Project",
     description:
-      "Azure OpenAI & Azure AI Search RAG for Classic WoW",
+      "IIOT-project with dasduino, backend services with docker including MQTT-broker, python, timescaledb and Grafana dashboard",
     category: "tech",
-    image: "/images/wow-rag-01.png",
-    githubLink: "https://github.com/Hippity87/wow-rag-app",
-  }, 
+    image: "/images/iiot-project-card.png",
+    githubLink: "https://www.youtube.com/watch?v=8Zze_gQ7dHs",
+  },
   {
     id: "project2",
     title: "Minni-luokittelija",
@@ -32,8 +32,17 @@ const projects = [
     //         <img src="/images/qc_rework_project_card.png" alt="QuantumConnect Rework" style="max-width: 100%;">
     //         `,
   },
-  {
+         {
     id: "project4",
+    title: "WoW Classic RAG",
+    description:
+      "Azure OpenAI & Azure AI Search RAG for Classic WoW",
+    category: "tech",
+    image: "/images/wow-rag-01.png",
+    githubLink: "https://github.com/Hippity87/wow-rag-app",
+  }, 
+  {
+    id: "project5",
     title: "React App",
     description:
       "Frontend app: vite + react + zustand + tailwind + reactrouter",
@@ -42,7 +51,7 @@ const projects = [
     githubLink: "https://react.projectlexagon.fi",
   },
   {
-    id: "project5",
+    id: "project6",
     title: "Fighterboi",
     description: "Game development with Unity, C# and Asesprite",
     category: "tech",
@@ -50,7 +59,7 @@ const projects = [
     githubLink: "https://github.com/Hippity87/fighterboi",
   },
   {
-    id: "project6",
+    id: "project7",
     title: "IoT-project",
     description:
       "Arduino Nano 33 IoT with Backend(Node.js+Express), Dashboard and Docker Infrastructure",
@@ -59,7 +68,7 @@ const projects = [
     githubLink: "https://github.com/Hippity87/iot-docker-project",
   },
   {
-    id: "project7",
+    id: "project8",
     title: "Valheim-server",
     description:
       "A live server configured for the game Valheim with linuxgsm and VirtualBox",
@@ -68,7 +77,7 @@ const projects = [
     githubLink: "https://youtu.be/UzIZxuJHfeE?si=-to8OL-Q1msWB70a",
   },
   {
-    id: "project8",
+    id: "project9",
     title: "Amp & Cabinet",
     description: "Self-built and designed Custom Amp & Cabinet",
     category: "design",
