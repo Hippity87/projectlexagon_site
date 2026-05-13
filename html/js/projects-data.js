@@ -59,32 +59,32 @@ const projects = [
     image: "/images/react_project_card.png",
     githubLink: "https://react.projectlexagon.fi",
   },
-  {
-    id: "project7",
-    title: "Fighterboi",
-    description: "Game development with Unity, C# and Asesprite",
-    category: "tech",
-    image: "/images/fighterboi_01.jpg",
-    githubLink: "https://github.com/Hippity87/fighterboi",
-  },
-  {
-    id: "project8",
-    title: "IoT-project",
-    description:
-      "Arduino Nano 33 IoT with Backend(Node.js+Express), Dashboard and Docker Infrastructure",
-    category: "tech",
-    image: "/images/iot-dashboard.png",
-    githubLink: "https://github.com/Hippity87/iot-docker-project",
-  },
-  {
-    id: "project9",
-    title: "Valheim-server",
-    description:
-      "A live server configured for the game Valheim with linuxgsm and VirtualBox",
-    category: "tech",
-    image: "/images/valheim-1.jpg",
-    githubLink: "https://youtu.be/UzIZxuJHfeE?si=-to8OL-Q1msWB70a",
-  },
+  // {
+  //   id: "project7",
+  //   title: "Fighterboi",
+  //   description: "Game development with Unity, C# and Asesprite",
+  //   category: "tech",
+  //   image: "/images/fighterboi_01.jpg",
+  //   githubLink: "https://github.com/Hippity87/fighterboi",
+  // },
+  // {
+  //   id: "project8",
+  //   title: "IoT-project",
+  //   description:
+  //     "Arduino Nano 33 IoT with Backend(Node.js+Express), Dashboard and Docker Infrastructure",
+  //   category: "tech",
+  //   image: "/images/iot-dashboard.png",
+  //   githubLink: "https://github.com/Hippity87/iot-docker-project",
+  // },
+  // {
+  //   id: "project9",
+  //   title: "Valheim-server",
+  //   description:
+  //     "A live server configured for the game Valheim with linuxgsm and VirtualBox",
+  //   category: "tech",
+  //   image: "/images/valheim-1.jpg",
+  //   githubLink: "https://youtu.be/UzIZxuJHfeE?si=-to8OL-Q1msWB70a",
+  // },
   {
     id: "project10",
     title: "Amp & Cabinet",
